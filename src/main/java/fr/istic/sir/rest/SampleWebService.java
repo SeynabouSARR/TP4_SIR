@@ -62,7 +62,7 @@ public class SampleWebService {
         electronicDevices.add(electronicDevice1);
         ElectronicDevice electronicDevice2= new ElectronicDevice();
         electronicDevice1.setConsMoyenne(65354215);
-        electronicDevice1.setPower("1000");
+        electronicDevice1.setPower("800");
         electronicDevices.add(electronicDevice2);
         p.setElectronicDevices(electronicDevices);
         return p;
