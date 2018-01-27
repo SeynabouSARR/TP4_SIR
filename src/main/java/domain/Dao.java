@@ -23,7 +23,7 @@ public class Dao {
 		EntityTransaction transaction = manager.getTransaction();
 		transaction.begin();
 		manager.persist(p);
-		transaction.commit(); 
+		transaction.commit();  
 	}
     public void createPersonne(Person personne) {
     	EntityTransaction transaction = manager.getTransaction();
