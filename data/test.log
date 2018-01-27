@@ -204,3 +204,20 @@ alter table Person add constraint FK_aev7q4jhceq0nkww0jeo8v8uh foreign key (frie
 /*C65*/DISCONNECT
 /*C66*/SET SCHEMA PUBLIC
 DISCONNECT
+/*C67*/SET SCHEMA PUBLIC
+alter table Devices add column power varchar(255)
+alter table Home add column name varchar(255)
+DISCONNECT
+/*C68*/SET SCHEMA PUBLIC
+alter table Person add column ageperson bigint
+INSERT INTO PERSON VALUES(3,NULL,'dcd','ddd',NULL,12)
+COMMIT
+DISCONNECT
+/*C69*/SET SCHEMA PUBLIC
+INSERT INTO PERSON VALUES(4,NULL,'dcd','ddd',NULL,12)
+COMMIT
+DISCONNECT
+/*C70*/SET SCHEMA PUBLIC
+INSERT INTO PERSON VALUES(5,NULL,'dcd','ddd',NULL,12)
+COMMIT
+DISCONNECT

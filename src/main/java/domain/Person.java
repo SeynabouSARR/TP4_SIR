@@ -4,6 +4,8 @@ import java.util.Collection;
 
 import javax.persistence.Access;
 import javax.persistence.AccessType;
+import javax.persistence.Basic;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -20,7 +22,7 @@ public class Person {
 	        long id;
 			String nom ;
 			String prenom;
-			long age;
+			Long age;
 			String mail;
 			Collection<Person> friends;
 			Collection<Home> homes;
@@ -92,10 +94,12 @@ public class Person {
 				this.prenom = prenom;
 			}
 
-			public long getAge() {
+			
+			@Column(name="ageperson")
+			public Long getAge() {
 				return age;
 			}
-			public void setAge(long age) {
+			public void setAge(Long age) {
 				this.age = age;
 			}
 			public void setHomes(Collection<Home> homes) {

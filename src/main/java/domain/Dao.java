@@ -15,7 +15,7 @@ public class Dao {
     EntityManager manager;
     
 	public Dao() {
-		this.factory = Persistence.createEntityManagerFactory("mysql");
+		this.factory = Persistence.createEntityManagerFactory("dev");
 		this.manager =  factory.createEntityManager();
 	} 
       

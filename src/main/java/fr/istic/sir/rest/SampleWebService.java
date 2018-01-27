@@ -40,7 +40,7 @@ public class SampleWebService {
         Person p = new Person();
         p.setNom("Mariama");
         p.setPrenom("Ndiaye");
-        p.setAge(20);
+        p.setAge(new Long(20));
         p.setMail("MariamaNdiaye@yahoo.fr");
         List<Home> homes= new ArrayList();
         Home home=new Home();
