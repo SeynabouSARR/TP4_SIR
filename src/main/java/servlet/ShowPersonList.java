@@ -24,12 +24,21 @@ public class ShowPersonList extends HttpServlet{
         DaoPerson dao = new DaoPerson();
         List<Person> personnes = dao.getPersons();
 
-        String texte = "";
+        String texte = "<table border=\"1\">";
+        texte+="<tr>";
+        texte += "<th>Nom</th><th>Prenom</th><th>Age</th>";
+        texte+="</tr>";
+        
 
         for(Person p : personnes)
         {
-            texte += p.getNom()+" "+p.getPrenom()+" "+p.getAge()+"<br/>";
+        	texte+="<tr>";
+            texte += "<td>"+p.getNom()+"</td><td>"+p.getPrenom()+"</td><td>"+p.getAge()+"</td>";
+            texte+="</tr>";
+            
         }
+        texte+="</table>";
+        
 
         req.setAttribute("texte", texte);
 
