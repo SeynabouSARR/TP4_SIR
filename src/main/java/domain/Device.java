@@ -5,12 +5,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Devices {
+public class Device {
     
 	
 	long id;
 	String power;
-   public Devices() {
+   public Device() {
 	}
     @Id
 	@GeneratedValue
