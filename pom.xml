@@ -46,16 +46,16 @@
 			<version>5.1.36</version>
 		</dependency>
 		<dependency>
-    <groupId>com.sun.jersey</groupId>
-    <artifactId>jersey-servlet</artifactId>
-    <version>1.18.3</version>
+		    <groupId>com.sun.jersey</groupId>
+		    <artifactId>jersey-servlet</artifactId>
+		    <version>1.18.3</version>
        </dependency>
               
        <dependency>
-    <groupId>com.sun.jersey</groupId>
-    <artifactId>jersey-json</artifactId>
-    <version>1.18.3</version>
-     </dependency>
+		    <groupId>com.sun.jersey</groupId>
+		    <artifactId>jersey-json</artifactId>
+		    <version>1.18.3</version>
+       </dependency>
   </dependencies>
   <build>
     <finalName>tp4SERVLETS</finalName>

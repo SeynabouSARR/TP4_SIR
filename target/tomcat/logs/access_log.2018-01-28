@@ -18,3 +18,8 @@
 0:0:0:0:0:0:0:1 - - [28/Jan/2018:18:16:16 +0100] "GET /rest/home HTTP/1.1" 404 - http-bio-8080-exec-9 2
 0:0:0:0:0:0:0:1 - - [28/Jan/2018:18:16:33 +0100] "GET /rest/hello/home HTTP/1.1" 200 144 http-bio-8080-exec-10 309
 0:0:0:0:0:0:0:1 - - [28/Jan/2018:18:22:28 +0100] "GET /rest/hello/person HTTP/1.1" 200 362 http-bio-8080-exec-3 21
+0:0:0:0:0:0:0:1 - - [28/Jan/2018:18:40:34 +0100] "GET /rest HTTP/1.1" 404 - http-bio-8080-exec-1 150
+0:0:0:0:0:0:0:1 - - [28/Jan/2018:18:40:55 +0100] "GET /rest/hello HTTP/1.1" 200 30 http-bio-8080-exec-2 18
+0:0:0:0:0:0:0:1 - - [28/Jan/2018:18:41:05 +0100] "GET /rest/opower HTTP/1.1" 200 46 http-bio-8080-exec-3 0
+0:0:0:0:0:0:0:1 - - [28/Jan/2018:18:41:24 +0100] "GET /rest/opower/persons HTTP/1.1" 200 552 http-bio-8080-exec-4 2810
+0:0:0:0:0:0:0:1 - - [28/Jan/2018:18:44:20 +0100] "GET /rest/opower/homes HTTP/1.1" 200 95 http-bio-8080-exec-1 2659
