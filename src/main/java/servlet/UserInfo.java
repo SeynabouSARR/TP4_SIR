@@ -1,6 +1,7 @@
 package servlet;
 import java.io.IOException;
 
+
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import domain.Dao;
+import dao.DaoPerson;
 import domain.Person;
 @WebServlet(name="userinfo",
 urlPatterns={"/UserInfo"})
@@ -29,9 +30,9 @@ public void doPost(HttpServletRequest request,
     List<Person> pers= new ArrayList();
     Person personne =new Person(nom,prenom,age);
     
-    Dao dao= new Dao();
-    dao.createPersonne(personne);
-    pers=dao.listPerson();
+    DaoPerson dao= new DaoPerson();
+    dao.createPerson(personne);
+    pers=dao.getPersons();
     
 		
     out.println("<HTML>\n<BODY>\n" +
