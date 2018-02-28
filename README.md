@@ -21,10 +21,23 @@ Le TP a pour objectif de manipuler les données avec JPA et un système de base 
 <h2>Deploiement</h2>
 <ol>
   <li>Cloner le projet avec le lien de github</li>
+  <li>S'assurer que Maven est installé sur notre machine</li>
   <li>Impoter le projet cloné en cliquant sur File > Import > Maven > Existing maven project</li>
   <img src="./images/maeven_project.jpg" />
+  <li>Explorer le dossier du projet, lancer le serveur de base de données HSQLDB</li>  
+  <img src="./images/explorer.jpg" />
+  ou
+  <li>Lancer le serveur MySQL</li>
+  <li>Créer une base de données du nom de "testjpa"</li>
   
-  <li>JAX-RS</li>
+  <li>Lancer votre application Maven en cliquant sur Run > Run as > Maven Build > </li>
+  
+  
 </ol>
 
 
+
+<h2>Auteurs</h2>
+  <li>SARR Seynabou</li>
+  <li>BOUE Melaine</li>
+</ul>
