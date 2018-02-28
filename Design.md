@@ -14,7 +14,7 @@ Objectif
 
 Le diagramme UML utilisé est le suivant
 
-<img src="*./images/class_diagram.PNG"/>
+<img src="./images/class_diagram.PNG"/>
 
 
 
