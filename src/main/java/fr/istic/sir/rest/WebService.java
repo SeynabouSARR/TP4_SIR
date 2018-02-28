@@ -20,8 +20,7 @@ public class WebService {
 	public String test() {
 		return "Juste un test du bon fonctionnement";
 	}
-	
-	
+		
 	@GET
 	@Path("/persons")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -30,8 +29,7 @@ public class WebService {
 		DaoPerson personManager = new DaoPerson();
 		return personManager.getPersons();
 	}
-	
-	
+		
 	@GET
 	@Path("/homes")
 	@Produces(MediaType.APPLICATION_JSON)
