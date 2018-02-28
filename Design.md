@@ -5,12 +5,13 @@ Nous avons utilisé quelques technologies comme
 - Manipulation d'un serveur de données HSQLDB
 
 <h2>Objectif</h2>
-- Pouvoir manipuler differents objets en utilisant JPA
-- Gestion de la connexion à la base de données et manipulation des données avec JPA
-- Creation et manipulation des Servlet
-- Gestion des routes
-- Conception d'un API avec JAX-RS
-- Acceder à des ressources de l'API avec des url bien specifique
+<ul>
+  <li> Pouvoir manipuler differents objets en utilisant JPA</li>
+  <li> Gestion de la connexion à la base de données et manipulation des données avec JPA</li>
+  <li> Creation et manipulation des Servlet</li>
+  <li> Gestion des routes</li>
+  <li> Conception d'un API avec JAX-RS</li>
+  <li> Acceder à des ressources de l'API avec des url bien specifique</li>
 
 Le diagramme UML utilisé est le suivant
 
