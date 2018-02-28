@@ -22,7 +22,7 @@ Le diagramme UML utilisé est le suivant
 
 <ul>
   <li>Pattern DAO</li>
-  <li>Pattern Singletton</hi>
+  <li>Pattern Singletton</li>
 </ul>
 
 
