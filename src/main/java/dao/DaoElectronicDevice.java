@@ -6,13 +6,19 @@ import javax.persistence.*;
 import javax.persistence.criteria.*;
 
 import domain.*;
-
+/**
+ * La classe DaoElectronic Device
+ * @author Melaine BOUE & Seynabou SARR
+ *
+ */
 public class DaoElectronicDevice {
 	
 	Dao managerObject;
 	EntityManager manager;
 	EntityTransaction transaction;
-    
+    /**
+     * Constructeur
+     */
 	public DaoElectronicDevice() {
 		managerObject = new Dao();
 		manager = managerObject.getManager();
@@ -21,7 +27,9 @@ public class DaoElectronicDevice {
       
 	
     
-	
+	/**
+	 * Fermer la connexion
+	 */
 	public void close() {
 		managerObject.close();
 		manager.close();
@@ -35,6 +43,7 @@ public class DaoElectronicDevice {
 	
 	/**
 	 * Crée une ElectronicDevice dans la base de données
+	 * @param d: inserer un element dans la base de données
 	 */
 	public void createElectronicDevice(ElectronicDevice d){
 		transaction.begin();

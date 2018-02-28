@@ -30,11 +30,10 @@ public class DaoDevice {
 	
 	
 	/************************CRUD*************************/
-	/************************CRUD*************************/
-	/************************CRUD*************************/
 	
 	/**
 	 * Crée une Device dans la base de données
+	 * @param d: element à inserer
 	 */
 	public void createDevice(Device d){
 		transaction.begin();

@@ -1,24 +1,27 @@
 package dao;
 
-import java.util.List;
-
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Root;
-
+/**
+ * La classe qui contient l'EntityManager
+ * @author Melaine BOUE & Seynabou SARR
+ *
+ */
 public class Dao {
 	EntityManagerFactory factory ;           
     EntityManager manager;
-    
+    /**
+     * Constructeur
+     */
 	public Dao() {
 		
 	} 
       
-	
+	/**
+	 * Retourne l'entity mananger
+	 * @return
+	 */
 	public EntityManager getManager() {
 		
 		if(this.manager==null)
@@ -30,7 +33,9 @@ public class Dao {
 		return manager;
 	}
 	
-	
+	/**
+	 * Ferme la connexion
+	 */
 	public void close() {
 		manager.close();
 		factory.close();
