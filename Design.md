@@ -1,3 +1,4 @@
+<h2>Design</h2>
 Ce document décrit les element clés de conception durant le TP Backend Java (TP2 et TP4)
 Nous avons utilisé quelques technologies comme
 - JPA
@@ -16,6 +17,13 @@ Nous avons utilisé quelques technologies comme
 Le diagramme UML utilisé est le suivant
 
 <img src="./images/class_diagram.PNG"/>
+
+<h2>Patron de conception utilisé</h2>
+
+<ul>
+  <li>Pattern DAO</li>
+  <li>Pattern Singletton</hi>
+</ul>
 
 
 
