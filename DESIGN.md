@@ -2,7 +2,7 @@
 Ce document décrit les element clés de conception durant le TP Backend Java (TP2 et TP4)
 Nous avons utilisé quelques technologies comme
 - JPA
-- La gestion de dependance avec Maeven
+- La gestion de dependance avec Maven
 - Manipulation d'un serveur de données HSQLDB
 
 <h2>Objectif</h2>
