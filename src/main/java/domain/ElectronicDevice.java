@@ -1,14 +1,12 @@
 package domain;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 
 @Entity
 public class ElectronicDevice extends Device{
 	long consMoyenne;
 	public ElectronicDevice() {
-		
+
 	}
 	public ElectronicDevice( long consMoyenne) {
 		this.consMoyenne = consMoyenne;
@@ -19,7 +17,4 @@ public class ElectronicDevice extends Device{
 	public void setConsMoyenne(long consMoyenne) {
 		this.consMoyenne = consMoyenne;
 	}
-	
-	
-
 }

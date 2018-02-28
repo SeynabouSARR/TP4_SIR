@@ -6,55 +6,63 @@ import javax.persistence.*;
 import javax.persistence.criteria.*;
 
 import domain.*;
-
+/**
+ *
+ * @author Melaine
+ *
+ */
 public class DaoPerson {
-	
+
 	Dao managerObject;
 	EntityManager manager;
 	EntityTransaction transaction;
-    
+
+	/**
+	 * Constructeur
+	 */
 	public DaoPerson() {
 		managerObject = new Dao();
 		manager = managerObject.getManager();
 		transaction = manager.getTransaction();
-	} 
-      
-	
-    
-	
+	}
+
+
+
+/**
+ * Ferme la connexion
+ */
 	public void close() {
 		managerObject.close();
 		manager.close();
 	}
-	
-	
-	
+
+
+
 	/************************CRUD*************************/
-	/************************CRUD*************************/
-	/************************CRUD*************************/
-	
+
 	/**
 	 * Crée une personne dans la base de données
+	 * @param p : Personne à ajouer dans la base de donnééz
 	 */
 	public void createPerson(Person p){
 		transaction.begin();
 		manager.persist(p);
-		
+
 		transaction.commit();
 		System.out.println("Insertion "+p.getId());
 	}
-	
+
 	/**
 	 * Afficher les données relatives à toutes les personnes
 	 */
     public void showPersons() {
         List<Person> resultList = manager.createQuery("Select a From Person a", Person.class).getResultList();
-        
+
         for (Person Person : resultList) {
             System.out.println(Person.toString());
         }
     }
-    
+
     /**
      * Reccupère la liste des personnes de la base de données
      * @return la liste des personnes
@@ -67,11 +75,11 @@ public class DaoPerson {
 		criteriaQuery.select(from);
 		TypedQuery<Person> query = manager.createQuery(criteriaQuery);
 		List<Person> persons = query.getResultList();
-		
+
 		return persons;
    }
-   
-   
+
+
    /**
     * Recherche une personne ayant pour identifiant id
     * @param id : identification de la personne à reccuperer
@@ -81,9 +89,9 @@ public class DaoPerson {
    {
 	  Long identifiant = new Long(id);
 	  return manager.find(Person.class, identifiant);
-	   
+
    }
-   
+
    /**
     * Mis à jour la personne person dans la base de données
     * @param person : nouvelle données
@@ -92,7 +100,7 @@ public class DaoPerson {
    {
 	   transaction.begin();
 	   //manager.merge(person);
-	   
+
 	   transaction.commit();
    }
 
