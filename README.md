@@ -26,7 +26,8 @@ Le TP a pour objectif de manipuler les données avec JPA et un système de base 
   <img src="./images/maeven_project.jpg" />
   <li>Explorer le dossier du projet, lancer le serveur de base de données HSQLDB</li>  
   <img src="./images/explorer.jpg" />
-  ou
+  <br/>
+  <h2>ou</h2>
   <li>Lancer le serveur MySQL</li>
   <li>Créer une base de données du nom de "testjpa"</li>
   
