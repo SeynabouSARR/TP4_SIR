@@ -19,7 +19,7 @@ public class Home {
    Collection<Heater> heaters;
    Collection<ElectronicDevice> electronicDevices;
 			public Home() {
-				heaters = new ArrayList();
+				heaters = new ArrayList <Heater>();
 			}
 			public Home(long id, long taille, long nbrePieces, Person person, Collection<Heater> heaters,
 					Collection<ElectronicDevice> electronicDevices) {

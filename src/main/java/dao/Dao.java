@@ -19,8 +19,8 @@ public class Dao {
 	} 
       
 	/**
-	 * Retourne l'entity mananger
-	 * @return
+	 * Retourne l'entity mananger.
+	 * @return manager
 	 */
 	public EntityManager getManager() {
 		
@@ -34,7 +34,7 @@ public class Dao {
 	}
 	
 	/**
-	 * Ferme la connexion
+	 * Ferme la connexion.
 	 */
 	public void close() {
 		manager.close();

@@ -3,12 +3,6 @@ package domain;
 import java.util.ArrayList;
 
 import java.util.Collection;
-
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
-import javax.persistence.Persistence;
-
 import dao.*;
 
 public class Main {
@@ -16,24 +10,23 @@ public class Main {
 	public static void main(String[] args) {
 		
 	    DaoPerson personManager = new DaoPerson();
-	    DaoDevice deviceManager = new DaoDevice();
 	    DaoHome homeManager = new DaoHome();
 	    DaoHeater heaterManager = new DaoHeater();
 	    DaoElectronicDevice electronicDeviceManager = new DaoElectronicDevice();
 	    
 	    
 		try {
-	        Collection <Heater> heaters=  new ArrayList();
+	        Collection <Heater> heaters=  new ArrayList<Heater>();
 			Heater heater= new Heater();
 			heaters.add(heater);
-			Collection <Home> homes= new ArrayList();
+			Collection <Home> homes= new ArrayList<Home>();
 			Home home = new Home();
-			Collection<ElectronicDevice> electronicDevices = new ArrayList();
+			Collection<ElectronicDevice> electronicDevices = new ArrayList <ElectronicDevice>();
 			ElectronicDevice ed= new ElectronicDevice();
 			electronicDevices.add(ed);
-			Collection<Person> persons = new ArrayList();
+			Collection<Person> persons = new ArrayList <Person> ();
 			Person p = new Person("SARR", "Seynabou","13 A rue du Bois Perrin",persons, homes,electronicDevices);
-			Collection<Person> pers= new ArrayList();
+			Collection<Person> pers= new ArrayList<Person>();
 			Person person= new Person("BOUE", "MELAINE","BOIS PERRIN", null, null, null);
 			persons.add(person);
 			pers.add(p);

@@ -42,7 +42,7 @@ public class SampleWebService {
         p.setPrenom("Ndiaye");
         p.setAge(new Long(20));
         p.setMail("MariamaNdiaye@yahoo.fr");
-        List<Home> homes= new ArrayList();
+        List<Home> homes= new ArrayList <Home>();
         Home home=new Home();
         home.setName("toto");
         home.setNbrePieces(2);
@@ -55,7 +55,7 @@ public class SampleWebService {
         home.addDevices(h2);
         homes.add(home);
         p.setHomes(homes);
-        List<ElectronicDevice> electronicDevices= new ArrayList();
+        List<ElectronicDevice> electronicDevices= new ArrayList<ElectronicDevice>();
         ElectronicDevice electronicDevice1= new ElectronicDevice();
         electronicDevice1.setConsMoyenne(4845312);
         electronicDevice1.setPower("900");
