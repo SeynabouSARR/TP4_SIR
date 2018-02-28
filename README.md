@@ -6,6 +6,7 @@ Le TP a pour objectif de manipuler les données avec JPA et un système de base 
   <li>Avoir une base en programmation Java</li>
   <li>Avoir une base en SQL </li>
   <li>Avoir une base dans les base de données relationnelles</li>
+  <li>Un base dans la gestion de dependance avec Maven serait un plus
 </ul>
 
 
@@ -20,7 +21,9 @@ Le TP a pour objectif de manipuler les données avec JPA et un système de base 
 <h2>Deploiement</h2>
 <ol>
   <li>Cloner le projet avec le lien de github</li>
-  <li>Pattern DAO</li>
+  <li>Impoter le projet cloné en cliquant sur File > Import > Maven > Existing maven project</li>
+  <img src="./images/maeven_project.jpg" />
+  
   <li>JAX-RS</li>
 </ol>
 
