@@ -4,7 +4,7 @@ Nous avons utilisé quelques technologies comme
 - La gestion de dependance avec Maeven
 - Manipulation d'un serveur de données HSQLDB
 
-Objectif
+<h2>Objectif</h2>
 - Pouvoir manipuler differents objets en utilisant JPA
 - Gestion de la connexion à la base de données et manipulation des données avec JPA
 - Creation et manipulation des Servlet
